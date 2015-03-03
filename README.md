@@ -154,3 +154,32 @@ I widget e gli operatori già esistenti che utilizziamo sono i seguenti:
 * __NgsiEntityToPoi__: usato per trasformare i dati in uscita dal QueryWidget in un formato adatto per il MapViewer.
 
 ![Livello interfaccia utente](/doc/images/livello_interfaccia_utente .png)
+
+##Interazione tra le componenti
+Per quanto riguarda la __parte grafica__: 
+
+* Il __ServiceWidget__ contatta Orion per conoscere i servizi disponibili, effettua una sottoscrizione per essere aggiornato in modo asincrono sulla creazione di nuovi servizi o circa l’aggiornamento di servizi già esistenti 
+
+* Il __ServiceWidget__ mostra all’utente i servizi appena scoperti, l’utente seleziona il servizio a cui è interessato cliccando con il mouse sul nome del servizio.
+
+* Il __ServiceWidget__ invia al QueryWidget il servizio che l’utente ha selezionato 
+
+* Il __QueryWidget__ contatta Orion per selezionare tutte le entità che appartengono al servizio richiesto, nel nostro caso le entità mostrate saranno i taxi e le misurazioni effettuate.
+
+* Le entità trovate sono mostrate sulla mappa dal __MapViewer__.
+
+Per la __parte di sensoristica__:
+
+* Il tassista attiva la misurazione attraverso il tablet presente sulla propria autovettura. Per fare ciò contatta un server scritto in python (__server_rasp.py__) presente direttamente sulla scheda. Il server, ricevuto il comando, eseguirà gli script necessari per effettuare la misurazione.
+
+* Ogni trenta secondi gli script __Obd.py, Shinyei.py, Send_measures.py, UpdateEntityAttribute.py__ si occupano di effettuare le misurazioni di temperatura pressione e PM10 e inviare i dati aggiornati al server Orion.
+
+Per la __logica di comunicazione e memorizzazione__:
+
+* Il __subscriptionServer__ resta in ascolto per aggiornamenti sui dati, quando riceva una notifica di update (nuove misurazioni) dal server Orion, invia il nuovo dato a Cosmos. Contemporaneamente il subscriptionServer si occuperà di salvare i dati su CKAN usando le api apposite.
+
+* __Cosmos__, ottenuti i dati inviatigli dal subscriptionServer, li memorizza su un filesystem distribuito.
+
+* Abbiamo detto che attraverso il LinearGraph è possibile visualizzare in un grafico i dati relativi ad una misurazione, il LinearGraph per fare questo contatta il RestServerHive. Il compito del RestServerHive è quello di fare da proxy tra il LinearGraph e Cosmos: il LinearGraph richiede i dati al server, quest'ultimo effettua una query Hive su Cosmos e restituisce i dati al widget in un formato opportuno. I passaggi appena descritti risultano necessari in quanto le api NGSI di Wirecloud non mettono a disposizione delle procedure per contattare direttamente Cosmos. 
+
+• Abbiamo dunque due modalità di accesso ai dati; la prima, descritta sopra, attraverso i widget di wirecloud, la seconda tramite i dataset pubblicati su CKAN.
