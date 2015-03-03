@@ -125,11 +125,11 @@ Il software che gestisce la componente di sensoristica è composto da tre script
 
 Il secondo livello ha il compito di permettere la comunicazione tra l’applicazione produttrice dei dati (nel nostro caso il livello di sensoristica) e l’applicazione consumatrice (l’interfaccia grafica che si trova al terzo livello). I dati di temperatura, pressione e del particolato devono essere smistati dal primo al terzo livello e memorizzati per una futura consultazione o post elaborazione. Per svolgere questi compiti abbiamo utilizzato esclusivamente moduli sofware messi a disposizione dalla tecnologia Fi-ware, nello specifico:
 
-* __Orion__: è il modulo software centrale del livello di backend, ha il compito di ricevere le informazioni/misurazioni, di smistare i valori misurati alle applicazioni che ne hanno fatto richiesta attraverso sottoscrizioni, di inviare i dati a Cosmos/CKAN per una memorizzazione permanente. ![Fi-ware catalogue](http://catalogue.fiware.org/enablers/publishsubscribe-context-broker-orion-context-broker)
+* __Orion__: è il modulo software centrale del livello di backend, ha il compito di ricevere le informazioni/misurazioni, di smistare i valori misurati alle applicazioni che ne hanno fatto richiesta attraverso sottoscrizioni, di inviare i dati a Cosmos/CKAN per una memorizzazione permanente. [Orion](http://catalogue.fiware.org/enablers/publishsubscribe-context-broker-orion-context-broker)
 
-* __Cosmos__: mette a disposizione un file-system distribuito in cui salvare i dati, il componente fa anche uso della tecnologia Hadoop MapReduce per una elaborazione efficiente dei dati su un cluster di macchine. ![Fi-ware catalogue](http://catalogue.fiware.org/enablers/bigdata-analysis-cosmos)
+* __Cosmos__: mette a disposizione un file-system distribuito in cui salvare i dati, il componente fa anche uso della tecnologia Hadoop MapReduce per una elaborazione efficiente dei dati su un cluster di macchine. [Cosmos](http://catalogue.fiware.org/enablers/bigdata-analysis-cosmos)
 
-* __CKAN__: permette la pubblicazione e la consultazione di informazioni in formato open data. I dati raccolti dal sistema verranno quindi pubblicati sullo store del Fi-lab attraverso le api CKAN. I dati quindi potranno essere venduti o fruiti gratuitamente attraverso lo store. ![CKAN Web site](http://ckan.org/)
+* __CKAN__: permette la pubblicazione e la consultazione di informazioni in formato open data. I dati raccolti dal sistema verranno quindi pubblicati sullo store del Fi-lab attraverso le api CKAN. I dati quindi potranno essere venduti o fruiti gratuitamente attraverso lo store. [CKAN](http://ckan.org/)
 
 ![Livello backend](/doc/images/livello_comunicazione_memorizzazione.png)
 ###Livello Interfaccia utente
