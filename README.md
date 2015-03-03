@@ -3,7 +3,7 @@ This is the ropository for the Arkimede health monitor system. It uses a low cos
 
 Sorry, at this moment, only italian version :(
 
-#Il progetto
+##Il progetto
 * Il sistema è __economico__: è stato infatti realizzato con hardware a basso
 costo. Per effettuare le misurazioni sono stati scelti dei sistemi embedded
 facilmente reperibili sul mercato, dai costi molto contenuti che allo stesso
@@ -180,6 +180,6 @@ Per la __logica di comunicazione e memorizzazione__:
 
 * __Cosmos__, ottenuti i dati inviatigli dal subscriptionServer, li memorizza su un filesystem distribuito.
 
-* Abbiamo detto che attraverso il LinearGraph è possibile visualizzare in un grafico i dati relativi ad una misurazione, il LinearGraph per fare questo contatta il RestServerHive. Il compito del RestServerHive è quello di fare da proxy tra il LinearGraph e Cosmos: il LinearGraph richiede i dati al server, quest'ultimo effettua una query Hive su Cosmos e restituisce i dati al widget in un formato opportuno. I passaggi appena descritti risultano necessari in quanto le api NGSI di Wirecloud non mettono a disposizione delle procedure per contattare direttamente Cosmos. 
+* Abbiamo detto che attraverso il __LinearGraph__ è possibile visualizzare in un grafico i dati relativi ad una misurazione, il LinearGraph per fare questo contatta il __RestServerHive__. Il compito del RestServerHive è quello di fare da proxy tra il LinearGraph e Cosmos: il LinearGraph richiede i dati al server, quest'ultimo effettua una query Hive su Cosmos e restituisce i dati al widget in un formato opportuno. I passaggi appena descritti risultano necessari in quanto le api NGSI di Wirecloud non mettono a disposizione delle procedure per contattare direttamente Cosmos. 
 
-• Abbiamo dunque due modalità di accesso ai dati; la prima, descritta sopra, attraverso i widget di wirecloud, la seconda tramite i dataset pubblicati su CKAN.
+* Abbiamo dunque due modalità di accesso ai dati; la prima, descritta sopra, attraverso i widget di wirecloud, la seconda tramite i dataset pubblicati su CKAN.
