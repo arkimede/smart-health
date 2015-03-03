@@ -38,7 +38,7 @@ libreria di uno specifico linguaggio.
 in formato __open data__ sullo store del Fi-lab. Il nostro sistema doveva
 infatti prevedere un metodo semplice per l’accesso ai dati da parte dei
 programmatori che avessero intenzione di sviluppare applicazioni di tipo
-ambientale. CKAN6 e il formato open data sono stati utilizzati proprio a
+ambientale. CKAN e il formato open data sono stati utilizzati proprio a
 questo scopo. Il vantaggio nell’uso di CKAN è rappresentato dalla possibilità
 di accedere ai dati delle misurazioni attraverso semplici api. Sviluppatori
 di terze parti possono dunque utilizzare il sistema per le proprie
@@ -48,3 +48,12 @@ applicazioni come sorgente di dati ambientali.
 I dati non sono accessibili solamente in formato open data
 per l’elaborazione automatica; attraverso un sistema innovativo di nome
 Wirecloud i dati sono consultabili dagli utenti direttamente dal browser
+
+##Architettura
+Il sistema è diviso in tre livelli:
+
+*Il livello di sensoristica: appartengono a questo livello i dispositivi embedded e i sensori utilizzati per la raccolta dei dati, le operazioni a questo livello consistono fondamentalmente nella raccolta e nell'inoltro delle informazioni al livello superiore che avrà il compito di elaborarle. 
+
+*Il livello di backend: a questo livello troviamo la logica di funzionamento del sistema, il compito del backend è quello di ricevere i dati dal livello inferiore e inoltrarli al sistema di memorizzazione permanente, passarli al livello superiore per l'interrogazione da parte degli utenti finali. Svolge dunque sia una funzione di comunicazione tra il livello di sensoristica e di interfaccia utente, sia di elaborazione e memorizzazione permanente dei dati.
+
+*Il livello di interfaccia utente: come si può intuire facilmente, questo è il livello al quale accedono gli utenti, attraverso di esso è possibile consultare i dati in modo intuitivo. Questo livello nasconde i livelli inferiori e rappresenta quindi l'interfaccia del sistema verso l'utente finale.
