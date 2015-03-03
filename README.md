@@ -186,26 +186,26 @@ Per la __logica di comunicazione e memorizzazione__:
 
 ##How to start
 
-Livello sensoristica: Utilizza il codice nella cartella raspberry o linino a seconda della piattaforma che stai usando.
+__Livello sensoristica__: Utilizza il codice nella cartella raspberry o linino a seconda della piattaforma che stai usando.
 
-* lanciare il server_rasp per ricevere la richiesta di misurazione
+* lanciare il __server_rasp__ per ricevere la richiesta di misurazione
 
 ```javascript
 #nohup sudo python ./server_rasp.py >> server_rasp.out
 ```
 
-* lanciare l'emulatore che simulata i diversi taxi che effettuano le misurazioni. E' impostante lanciare l'emulatore solo dopo aver lanciato il server che gestisce le richieste dei tassisti.
+* lanciare __l'emulatore__ che simulata i diversi taxi che effettuano le misurazioni. E' impostante lanciare l'emulatore solo dopo aver lanciato il server che gestisce le richieste dei tassisti.
 ```javascript
 #nohup sudo python ./taxi_emulator.py >> taxi_emulator.out
 ```
 
-Livello backend:
-* lancia il redis server
+__Livello backend__:
+* lancia il __redis server__
 ```javascript
 #nohup ./redis-server >> redis-server.out
 ```
 
-* lancia Rush, listener e consumer
+* lancia __Rush__ (listener e consumer)
 ```javascript
 #nohup ./consumer >> consumer.out
 ```
@@ -214,16 +214,16 @@ Livello backend:
 #nohup ./listener >> listener.out
 ```
 
-* lancia il contextBroker (Orion). Fai attenzione all'opzione -rush. E' importante che rush sia in esecuzione prima di lanciare Orion.
+* lancia il __contextBroker__ (Orion). Fai attenzione all'opzione -rush. E' importante che rush sia in esecuzione prima di lanciare Orion.
 ```javascript
 #/usr/bin/contextBroker -port 1026 -logDir /var/log/contextBroker -pidpath /var/run/contextBroker/contextBroker.pid -dbhost localhost -db orion -rush localhost:5001
 ```
-* lancia il subscriptionServer
+* lancia il __subscriptionServer__
 ```javascript
 #nohup subscriptionServer.py 7777 /accumulate on >> subscriptionServer.out
 ```
 
-* lancia il restServerHive
+* lancia il __restServerHive__
 ```javascript
 #nohup  python restServerHive.py 1027 >> restServerHive.out
 ```
