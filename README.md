@@ -186,6 +186,14 @@ Per la __logica di comunicazione e memorizzazione__:
 
 ##How to start
 
+```javascript
+#nohup sudo python ./server_rasp.py >> server_rasp.out
+```
+
+```javascript
+#nohup sudo python ./taxi_emulator.py >> taxi_emulator.out
+```
+
 
 ```javascript
 #nohup ./redis-server >> redis-server.out
@@ -201,10 +209,6 @@ Per la __logica di comunicazione e memorizzazione__:
 
 ```javascript
 #/usr/bin/contextBroker -port 1026 -logDir /var/log/contextBroker -pidpath /var/run/contextBroker/contextBroker.pid -dbhost localhost -db orion -rush localhost:5001
-```
-
-```javascript
-#nohup subscriptionServer.py 7777 /accumulate on >> subscriptionServer.out
 ```
 
 ```javascript
