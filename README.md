@@ -200,18 +200,18 @@ __Livello sensoristica__: Utilizza il codice nella cartella raspberry o linino a
 ```
 
 __Livello backend__: Hai bisogno di aver precedentemente installato questi componenti:
-* [redis]http://redis.io/download)
+* [redis](http://redis.io/download)
 * [rush](https://github.com/telefonicaid/Rush/wiki)
 * [orion](https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/Publish/Subscribe_Broker_-_Orion_Context_Broker_-_Installation_and_Administration_Guide)
 
 I link contengono le informazioni utili per eseguire con successo l'installazione dei software, puoi trovare delle info aggiuntive nei pdf presenti nella cartella doc di questo repository.
 
-* lancia il __redis server__
+* lancia il __redis-server__
 ```javascript
 #nohup ./redis-server >> redis-server.out
 ```
 
-* lancia __Rush__ (listener e consumer)
+* lancia __rush__ (listener e consumer)
 ```javascript
 #nohup ./consumer >> consumer.out
 ```
@@ -233,3 +233,5 @@ I link contengono le informazioni utili per eseguire con successo l'installazion
 ```javascript
 #nohup  python restServerHive.py 1027 >> restServerHive.out
 ```
+
+__Livello interfaccia utente__: hai bisogno di un account su [fi-lab](https://account.lab.fiware.org/) e dei seguenti widget/operatori installati. Per installare i componenti usa i .wgt come spiegato in questo [video](https://www.youtube.com/watch?v=DSon3TSO9T8&feature=youtu.be)
