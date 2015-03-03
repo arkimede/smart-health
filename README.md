@@ -1,6 +1,8 @@
 # smart-health
 This is the ropository for the Arkimede health monitor system. It uses a low cost sensor to detect temperature, pressure and PM10 in the air. It is economic, scalable, interoperable and open ;) . Try it!
 
+Sorry, at this moment, only italian version :(
+
 #Il progetto
 * Il sistema è __economico__: è stato infatti realizzato con hardware a basso
 costo. Per effettuare le misurazioni sono stati scelti dei sistemi embedded
