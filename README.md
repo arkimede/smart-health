@@ -131,6 +131,10 @@ Il secondo livello ha il compito di permettere la comunicazione tra l’applicaz
 
 * [__CKAN__](http://ckan.org/): permette la pubblicazione e la consultazione di informazioni in formato open data. I dati raccolti dal sistema verranno quindi pubblicati sullo store del Fi-lab attraverso le api CKAN. I dati quindi potranno essere venduti o fruiti gratuitamente attraverso lo store.
 
+* __subscriptionServer__: Il subscriptionServer svolge il ruolo di proxy tra Orion e i due sistemi di memorizzazione usati dal nostro sistema: Cosmos e CKAN. Come abbiamo ampiamente detto, Orion non è in grado di memorizzare i dati a lungo termine; i valori degli attributi vengono sovrascritti ad ogni nuovo aggiornamento. E' stato quindi necessario utilizzare altri meccanismi per la memorizzazione permanente dei dati. Cosmos, usando la tecnologia Hadoop, permette al sistema di sfruttare un filesystem distribuito in grado di memorizzare grosse quantità di dati. Inoltre, attraverso MapReduce, si offre la possibilità di effettuare elaborazioni efficienti sui dati distribuiti che altri sistemi non sono in grado di svolgere. CKAN invece è pensato per la pubblicazione dei dati in formato open data, dobbiamo pensare a questo sistema come un luogo in cui gli utenti o gli sviluppatori possono cercare ed accedere ai dati di cui hanno bisogno. Entrambi i sistemi dunque memorizzano i dati, Cosmos ha la funzione di memorizzazione e post elaborazione mentre CKAN è un luogo di condivisione e scambio dei dati.
+
+* __restServerHive__: Il compito del RestServerHive è quello di fare da proxy tra il LinearGraph e Cosmos: il LinearGraph richiede i dati al server, quest'ultimo effettua una query Hive su Cosmos e restituisce i dati al widget in un formato opportuno. I passaggi appena descritti risultano necessari in quanto le api NGSI di Wirecloud non mettono a disposizione delle procedure per contattare direttamente Cosmos. 
+
 ![Livello backend](/doc/images/livello_comunicazione_memorizzazione.png)
 ###Livello Interfaccia utente
 
