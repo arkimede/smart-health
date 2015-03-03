@@ -51,49 +51,49 @@ Wirecloud i dati sono consultabili dagli utenti direttamente dal browser
 
 ##Struttura Dati
 Il sistema utilizza il modello dei dati [NGSI](http://technical.openmobilealliance.org/Technical/release_program/docs/NGSI/V1_0-20120529-A/OMA-TS-NGSI_Context_Management-V1_0-20120529-A.pdf) (New Generation Service Interface)
-L’entità più importante nel nostro sistema è il Service, questa entità rappresenta il singolo servizio. I servizi presenti in questo momento sulla piattaforma sono tre: uno per la misurazione di temperatura, uno per la pressione e l'ultimo per la rilevazione del particolato. Il sistema, come già anticipato, prevede la possibilità di aggiungere nuovi servizi e meccanismi di discovery dei servizi per l'utente.
+L’entità più importante nel nostro sistema è il __Service__, questa entità rappresenta il singolo servizio. I servizi presenti in questo momento sulla piattaforma sono tre: uno per la misurazione di __temperatura__, uno per la __pressione__ e l'ultimo per la rilevazione del __particolato__. Il sistema, come già anticipato, prevede la possibilità di aggiungere nuovi servizi e meccanismi di discovery dei servizi per l'utente.
 
 Di seguito sono riportati gli attributi dell'entità Service con una breve spiegazione:
 
-1. description: una breve descrizione del servizio
+1. __description__: una breve descrizione del servizio
 
-2. typeOfService: stringa di testo che rappresenta il servizio
+2. __typeOfService__: stringa di testo che rappresenta il servizio
 
-Successivamente abbiamo l'entità Procedure che rappresenta il singolo sensore montato sul taxi, questi sono i suoi attributi:
+Successivamente abbiamo l'entità __Procedure__ che rappresenta il singolo sensore montato sul taxi, questi sono i suoi attributi:
 
-1. description: una breve descrizione del sensore.
+1. __description__: una breve descrizione del sensore.
 
-2. model: marca e modello del sensore
+2. __model__: marca e modello del sensore
 
-3. type: indica se il sensore è fisso o mobile
+3. __type__: indica se il sensore è fisso o mobile
 
-4. datasheet: link al datasheet del sensore
+4. __datasheet__: link al datasheet del sensore
 
-5. observed_property: proprietà fisica misurata dal sensore.
+5. __observed_property__: proprietà fisica misurata dal sensore.
 
-Per rappresentare il taxi esiste l'entità Taxi con i seguenti attributi:
+Per rappresentare il taxi esiste l'entità __Taxi__ con i seguenti attributi:
 
-1. ID_SERVICE: id del servizio a cui partecipa il taxi
+1. __ID_SERVICE__: id del servizio a cui partecipa il taxi
 
-2. procedure: id del sensore montato sul taxi
+2. __procedure__: id del sensore montato sul taxi
 
-3. position: posizione attuale occupata dal taxi
+3. __position__: posizione attuale occupata dal taxi
 
-Infine abbiamo l'entità Observations che rappresenta la singola osservazione effettuata dal sensore. Questi i suoi attributi:
+Infine abbiamo l'entità __Observations__ che rappresenta la singola osservazione effettuata dal sensore. Questi i suoi attributi:
 
-1. ID_SERVICE: id del servizio a cui appartiene la misurazione
+1. __ID_SERVICE__: id del servizio a cui appartiene la misurazione
 
-2. date: data della misurazione
+2. __date__: data della misurazione
 
-3. duration: durata della misurazione
+3. __duration__: durata della misurazione
 
-4. server: ip del server che contiene i dati dell'osservazione
+4. __server__: ip del server che contiene i dati dell'osservazione
 
-5. position: posizione della misurazione
+5. __position__: posizione della misurazione
 
-6. observed_property: proprietà fisica oggetto della misura
+6. __observed_property__: proprietà fisica oggetto della misura
 
-7. procedure: id del sensore che ha effettuato la misurazione
+7. __procedure__: id del sensore che ha effettuato la misurazione
 
 ##Architettura
 Il sistema è diviso in tre livelli:
