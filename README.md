@@ -188,5 +188,34 @@ Per la __logica di comunicazione e memorizzazione__:
 
 
 ```javascript
-prova
+#nohup ./redis-server >> redis-server.out
 ```
+
+```javascript
+#nohup ./consumer >> consumer.out
+```
+
+```javascript
+#nohup ./listener >> listener.out
+```
+
+```javascript
+#/usr/bin/contextBroker -port 1026 -logDir /var/log/contextBroker -pidpath /var/run/contextBroker/contextBroker.pid -dbhost localhost -db orion -rush localhost:5001
+```
+
+```javascript
+#nohup subscriptionServer.py 7777 /accumulate on >> subscriptionServer.out
+```
+
+```javascript
+#nohup subscriptionServer.py 7777 /accumulate on >> subscriptionServer.out
+```
+
+```javascript
+#nohup  python restServerHive.py 1027 >> restServerHive.out
+```
+
+
+
+
+
