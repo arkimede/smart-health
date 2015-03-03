@@ -1,0 +1,47 @@
+4th - 3.61.5-1 - 4th forth compiler
+6in4 - 16-1 - Provides support for 6in4 tunnels in /etc/config/network. Refer to http://wiki.openwrt.org/doc/uci/network for configuration details.
+6rd - 4-1 - Provides support for 6rd tunnels in /etc/config/network. Refer to http://wiki.openwrt.org/doc/uci/network for configuration details.
+6relayd - 2013-07-26-2ed520c500b0fbb484cfad5687eb39a0da43dcf7 - 6relayd is a daemon for serving and relaying IPv6 management protocols to configure clients and downstr
+eam routers.  6relayd provides server services for RA, stateless DHCPv6, DHCPv6-PD and can be used to relay RA, DHCPv6 and NDP between routed (non-bridged) interfaces 
+in case no delegated prefixes are provided by the upstream router.
+6to4 - 12-1 - Provides support for 6to4 tunnels in /etc/config/network. Refer to http://wiki.openwrt.org/doc/uci/network for configuration details.
+6tunnel - 0.11rc2-3 - IPv4 / IPv6 tunnel proxy
+GraphicsMagick - 1.3.8-2 - An image manipulation library.
+GraphicsMagick-jpeg - 1.3.8-2 - GraphicsMagick JPEG module
+agetty - 2.21.2-1 - agetty opens a tty port, prompts for a login name and invokes the /bin/login command
+ahcpd - 0.53-1 - Ahcpd is a daemon for configuring an IPv6 network using the Ad-Hoc Configuration Protocol (AHCP).  AHCP is designed for wireless mesh networks, where 
+IPv6 autoconfiguration and DHCPv6 do not work, but may also be used on wired networks.
+aiccu - 20070115-10 - SixXS Automatic IPv6 Connectivity Client Utility
+aircrack-ng - 1.1-3 - Aircrack-ng is the next generation of aircrack with new features
+aircrack-ptw - 1.0.0-1 - A tool using a new method for breaking WEP Keys
+airpwn - 1.3-1 - Airpwn is a framework for 802.11 (wireless) packet injection. Airpwn listens to incoming wireless packets, and if the data matches a pattern specified
+ in the config files, custom content is injected "spoofed" from the wireless access point. From the perspective of the wireless client, airpwn becomes the server.
+alive6 - 0.7-1 - Find active IPv6 hosts in the network segment
+alljoyn - 14.06.00-2 - AllJoyn is a daemon and application framework for developing ad hoc peer-to-peer applications.  This includes the run-time daemon and C++ librar
+y.
+alljoyn-about - 14.06.00-2 - AllJoyn About service library.
+alljoyn-c - 14.06.00-2 - AllJoyn C binding.  This provides a C library for building AllJoyn programs in C.  This is just a C callable wrapper to the C++ library.
+alljoyn-config - 14.06.00-1 - AllJoyn Config service library.
+alljoyn-config-samples - 14.06.00-1 - Alljoyn Config service library samples.  (This is primarily for testing. The contents of this package vary according which other 
+alljoyn packages are selected.)
+alljoyn-controlpanel - 14.06.00-1 - AllJoyn ControlPanel service library.
+alljoyn-controlpanel-samples - 14.06.00-1 - Alljoyn ControlPanel service library samples.  (This is primarily for testing. The contents of this package vary according 
+which other alljoyn packages are selected.)
+alljoyn-notification - 14.06.00-1 - AllJoyn Notification service library.
+alljoyn-notification-samples - 14.06.00-1 - Alljoyn Notification service library samples.  (This is primarily for testing. The contents of this package vary according 
+which other alljoyn packages are selected.)
+alljoyn-onboarding - 14.06.00-1 - AllJoyn onboarding service.
+alljoyn-sample_apps - 14.06.00-1 - AllJoyn services sample_apps sample applications - includes ServerSample and ACServerSample.
+alljoyn-samples - 14.06.00-2 - Alljoyn samples.  (This is primarily for testing.  The contents of this package vary according which other alljoyn packages are selected
+.)
+alljoyn-services_common - 14.06.00-1 - AllJoyn Services Common service library.
+alsa-lib - 1.0.24.1-1 - This is the library package for alsa, needed by some userspace programs. You must have enabled the ALSA support in the kernel.
+alsa-utils - 1.0.24.2-2 - ALSA (Advanced Linux Sound Architecture) utilities
+alsa-utils-seq - 1.0.24.2-2 - ALSA sequencer utilities
+alsa-utils-tests - 1.0.24.2-2 - ALSA utilities test data (adds ~1.3M to image)
+amule - 2.2.6-1 - A multi-platform eMule-like ed2k client
+amwall - 0.1.0-2 - PF to iptables
+anyremote - 4.7.1-3 - Remote control your machine via bluetooth
+aoetools - 32-1 - The aoetools are programs for users of the ATA over Ethernet (AoE) network storage protocol, a simple protocol for using storage over an ethernet LAN
+. The vblade program (storage target) exports a block device using AoE.
+ap51-flash - r232-3 - A tool for flashing (nearly) all ap51/ap61 based routers
