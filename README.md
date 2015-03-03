@@ -199,7 +199,13 @@ __Livello sensoristica__: Utilizza il codice nella cartella raspberry o linino a
 #nohup sudo python ./taxi_emulator.py >> taxi_emulator.out
 ```
 
-__Livello backend__:
+__Livello backend__: Hai bisogno di aver precedentemente installato questi componenti:
+* [redis]http://redis.io/download)
+* [rush](https://github.com/telefonicaid/Rush/wiki)
+* [orion](https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/Publish/Subscribe_Broker_-_Orion_Context_Broker_-_Installation_and_Administration_Guide)
+
+I link contengono le informazioni utili per eseguire con successo l'installazione dei software, puoi trovare delle info aggiuntive nei pdf presenti nella cartella doc di questo repository.
+
 * lancia il __redis server__
 ```javascript
 #nohup ./redis-server >> redis-server.out
