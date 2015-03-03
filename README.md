@@ -106,6 +106,8 @@ Il sistema è diviso in tre livelli:
 
 * Il livello di __interfaccia utente__: come si può intuire facilmente, questo è il livello al quale accedono gli utenti, attraverso di esso è possibile consultare i dati in modo intuitivo. Questo livello nasconde i livelli inferiori e rappresenta quindi l'interfaccia del sistema verso l'utente finale.
 
+![Livelli del sistema](/doc/images/livelli_sistema_cut.jpeg)
+
 ###Livello sensoristica
 
 ###Livello backend
