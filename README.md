@@ -97,6 +97,8 @@ Infine abbiamo l'entità __Observations__ che rappresenta la singola osservazion
 
 7. __procedure__: id del sensore che ha effettuato la misurazione
 
+![Struttura dati](/doc/images/struttura_dati_definitivo_cut.png)
+
 ##Architettura
 Il sistema è diviso in tre livelli:
 
@@ -106,8 +108,15 @@ Il sistema è diviso in tre livelli:
 
 * Il livello di __interfaccia utente__: come si può intuire facilmente, questo è il livello al quale accedono gli utenti, attraverso di esso è possibile consultare i dati in modo intuitivo. Questo livello nasconde i livelli inferiori e rappresenta quindi l'interfaccia del sistema verso l'utente finale.
 
+![Livelli del sistema](/doc/images/livelli_sistema_cut.jpeg)
+
 ###Livello sensoristica
+
+![Livello sensoristica](/doc/images/livello_sensoristica.png)
 
 ###Livello backend
 
+![Livello backend](/doc/images/livello_comunicazione_memorizzazione.png)
 ###Livello Interfaccia utente
+
+![Livello interfaccia utente](/doc/images/livello_interfaccia_utente .png)
