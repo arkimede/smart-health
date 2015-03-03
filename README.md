@@ -117,4 +117,4 @@ Il sistema è diviso in tre livelli:
 ![Livello backend](/doc/images/livello_comunicazione_memorizzazione.png)
 ###Livello Interfaccia utente
 
-![Livello interfaccia utente](/doc/images/livello_interfaccia_utente.png)
+![Livello interfaccia utente](/doc/images/livello_interfaccia_utente .png)
