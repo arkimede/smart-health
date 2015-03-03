@@ -97,6 +97,8 @@ Infine abbiamo l'entità __Observations__ che rappresenta la singola osservazion
 
 7. __procedure__: id del sensore che ha effettuato la misurazione
 
+![Struttura dati](/doc/images/struttura_dati_definitivo_cut.png)
+
 ##Architettura
 Il sistema è diviso in tre livelli:
 
