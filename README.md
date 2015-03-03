@@ -110,6 +110,11 @@ Il sistema è diviso in tre livelli:
 
 ###Livello sensoristica
 
+![Livello sensoristica](/doc/images/livello_sensoristica.png)
+
 ###Livello backend
 
+![Livello backend](/doc/images/livello_comunicazione_memorizzazione.png)
 ###Livello Interfaccia utente
+
+![Livello sensoristica](/doc/images/livello_interfaccia_utente.png)
