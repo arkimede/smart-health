@@ -1,5 +1,5 @@
 # smart-health
-This is the repository for the health monitor system of Arkimede s.r.l . It uses a low cost [sensor](http://www.sca-shinyei.com/pdf/PPD42NS.pdf) to detect temperature, pressure and PM10 in the air. It is economic, scalable, interoperable and open ;) . Try it!
+This is the repository for the health monitor system of Arkimede s.r.l . It uses a low cost [sensor](http://www.sca-shinyei.com/pdf/PPD42NS.pdf) and an [obdII bluetooth adapter](http://www.cartft.com/catalog/il/1859) to detect __temperature__, __pressure__ and __PM10__ in the air. It is economic, scalable, interoperable and open ;) . Try it!
 
 Sorry, at this moment, only italian version :(
 
