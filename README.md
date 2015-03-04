@@ -1,21 +1,18 @@
 # smart-health
-This is the ropository for the Arkimede health monitor system. It uses a low cost sensor to detect temperature, pressure and PM10 in the air. It is economic, scalable, interoperable and open ;) . Try it!
+This is the repository for the health monitor system of Arkimede s.r.l . It uses a low cost [sensor](http://www.sca-shinyei.com/pdf/PPD42NS.pdf) to detect temperature, pressure and PM10 in the air. It is economic, scalable, interoperable and open ;) . Try it!
 
 Sorry, at this moment, only italian version :(
 
 ##Il progetto
-* Il sistema è __economico__: è stato infatti realizzato con hardware a basso
-costo. Per effettuare le misurazioni sono stati scelti dei sistemi embedded
-facilmente reperibili sul mercato, dai costi molto contenuti che allo stesso
-tempo garantiscono buona capacità di elaborazione. Anche la scelta della
-sensoristica è stata rivolta a mantenere bassi i costi, i sensori di particolato
+
+* Il sistema è __economico__: è stato infatti realizzato con hardware a basso costo. Per effettuare le misurazioni sono stati scelti dei sistemi embedded facilmente reperibili sul mercato, dai costi molto contenuti che allo stesso tempo garantiscono buona capacità di elaborazione. Anche la scelta della sensoristica è stata rivolta a mantenere bassi i costi, i sensori di particolato
 sono purtroppo molto costosi. Il nostro approccio è stato quello di
 risparmiare sulla qualità dei sensori, pensando di migliorare la precisione
 della misurazione in un secondo momento attraverso una post elaborazione
 dei dati. Studi in letteratura hanno dimostrato come un
-elevato numero di sensori a basso costo, con opportune elaborazioni dei
-dati, possono garantire delle misurazioni paragonabili a quelle di un
-singolo sensore di alta qualità molto più costoso
+elevato numero di sensori a basso costo, con opportune calibrazioni, possono 
+garantire delle misurazioni paragonabili a quelle di un singolo sensore di alta
+qualità molto più costoso
 
 * Il sistema è __scalabile__: la memorizzazione dei dati è distribuita attraverso
 filesystem HDFS3 permettendo così lo storing di grosse moli di dati. Quando
@@ -254,5 +251,6 @@ Crea il workspace che ospiterà il tuo mashup, usa l'immagine di sotto per colle
 ![Wiring](/doc/images/mashup_wiring.png)
 
 Al termine di queste operazioni dovresti avere l'interfaccia installata come nella foto di sotto.
+
 ![Interface](/doc/images/mashup_vista_utente.png)
 
