@@ -238,3 +238,6 @@ I link contengono le informazioni utili per eseguire con successo l'installazion
 
 ###__Livello interfaccia utente__
 hai bisogno di un account su [fi-lab](https://account.lab.fiware.org/) e dei seguenti widget/operatori installati. Per installare i componenti usa i .wgt come spiegato in questo [video](https://www.youtube.com/watch?v=DSon3TSO9T8&feature=youtu.be)
+
+bla bla bla
+![Wiring](/doc/images/mashup_wiring.png)
