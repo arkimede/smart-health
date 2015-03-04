@@ -160,7 +160,7 @@ Utilizza il codice nella cartella [raspberry](https://github.com/arkimede/smart-
 * lanciare il __server_rasp__ per ricevere la richiesta di misurazione
 
 ```javascript
-#nohup sudo python ./server_rasp.py >> server_rasp.out
+#nohup sudo python ./server_rasp.py 1234 >> server_rasp.out
 ```
 
 * lanciare __l'emulatore__ che simulata i diversi taxi che effettuano le misurazioni. E' impostante lanciare l'emulatore solo dopo aver lanciato il server che gestisce le richieste dei tassisti.
