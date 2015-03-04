@@ -155,7 +155,7 @@ Per la __logica di comunicazione e memorizzazione__:
 ##How to start
 
 ###__Livello sensoristica__ 
-Utilizza il codice nella cartella [raspberry](https://github.com/arkimede/smart-health/tree/master/livello_sensoristica/raspberry) o [linino](https://github.com/arkimede/smart-health/tree/master/livello_sensoristica/linino) a seconda della piattaforma che stai usando. Se stai usando una linino one ricorda che dovrai caricare lo sketch __Shinyei.ino__ sul microcontrollore. 
+Utilizza il codice nella cartella [raspberry](https://github.com/arkimede/smart-health/tree/master/livello_sensoristica/raspberry) o [linino](https://github.com/arkimede/smart-health/tree/master/livello_sensoristica/linino) a seconda della tua piattorma. Nel caso di linino one, ricorda che come prima cosa dovrai caricare lo sketch __Shinyei.ino__ sul microcontrollore. 
 
 * lanciare il __server_rasp__ per ricevere la richiesta di misurazione
 
