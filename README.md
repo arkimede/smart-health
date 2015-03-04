@@ -237,7 +237,16 @@ I link contengono le informazioni utili per eseguire con successo l'installazion
 ```
 
 ###__Livello interfaccia utente__
-hai bisogno di un account su [fi-lab](https://account.lab.fiware.org/) e dei seguenti widget/operatori installati. Per installare i componenti usa i .wgt come spiegato in questo [video](https://www.youtube.com/watch?v=DSon3TSO9T8&feature=youtu.be)
+Hai bisogno di un account su [fi-lab](https://account.lab.fiware.org/) e dei seguenti widget/operatori installati:
+* serviceWidget
+* queryWidget
+* NGSI Entity2Poi
+* MapViewer
+* historyHiveToLinearGraph
+* LienarGraph
 
-bla bla bla
+Puoi trovare i .wgt che ti servono in questa [cartella](https://github.com/arkimede/smart-health/tree/master/livello_interfaccia_utente/wgt).
+La procedura per caricare i .wgt su fi-lab è spiegata in questo [video](https://www.youtube.com/watch?v=DSon3TSO9T8&feature=youtu.be)
+
+Usa l'immagine di sotto per collegare nel modo corretto i componenti e creare il tuo mashup
 ![Wiring](/doc/images/mashup_wiring.png)
