@@ -186,7 +186,8 @@ Per la __logica di comunicazione e memorizzazione__:
 
 ##How to start
 
-__Livello sensoristica__: Utilizza il codice nella cartella [raspberry](https://github.com/arkimede/smart-health/tree/master/livello_sensoristica/raspberry) o [linino](https://github.com/arkimede/smart-health/tree/master/livello_sensoristica/linino) a seconda della piattaforma che stai usando. Se stai usando una linino one ricorda che dovrai caricare lo sketch __Shinyei.ino__ sul microcontrollore. 
+###__Livello sensoristica__ 
+Utilizza il codice nella cartella [raspberry](https://github.com/arkimede/smart-health/tree/master/livello_sensoristica/raspberry) o [linino](https://github.com/arkimede/smart-health/tree/master/livello_sensoristica/linino) a seconda della piattaforma che stai usando. Se stai usando una linino one ricorda che dovrai caricare lo sketch __Shinyei.ino__ sul microcontrollore. 
 
 * lanciare il __server_rasp__ per ricevere la richiesta di misurazione
 
@@ -199,7 +200,8 @@ __Livello sensoristica__: Utilizza il codice nella cartella [raspberry](https://
 #nohup sudo python ./taxi_emulator.py >> taxi_emulator.out
 ```
 
-__Livello backend__: Hai bisogno di aver precedentemente installato questi componenti:
+###__Livello backend__
+Hai bisogno di aver precedentemente installato questi componenti:
 * [redis](http://redis.io/download)
 * [rush](https://github.com/telefonicaid/Rush/wiki)
 * [orion](https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/Publish/Subscribe_Broker_-_Orion_Context_Broker_-_Installation_and_Administration_Guide)
@@ -234,4 +236,17 @@ I link contengono le informazioni utili per eseguire con successo l'installazion
 #nohup  python restServerHive.py 1027 >> restServerHive.out
 ```
 
-__Livello interfaccia utente__: hai bisogno di un account su [fi-lab](https://account.lab.fiware.org/) e dei seguenti widget/operatori installati. Per installare i componenti usa i .wgt come spiegato in questo [video](https://www.youtube.com/watch?v=DSon3TSO9T8&feature=youtu.be)
+###__Livello interfaccia utente__
+Hai bisogno di un account su [fi-lab](https://account.lab.fiware.org/) e dei seguenti widget/operatori installati:
+* serviceWidget
+* queryWidget
+* NGSI Entity2Poi
+* MapViewer
+* historyHiveToLinearGraph
+* LienarGraph
+
+Puoi trovare i .wgt che ti servono in questa [cartella](https://github.com/arkimede/smart-health/tree/master/livello_interfaccia_utente/wgt).
+La procedura per caricare i .wgt su fi-lab è spiegata in questo [video](https://www.youtube.com/watch?v=DSon3TSO9T8&feature=youtu.be)
+
+Usa l'immagine di sotto per collegare nel modo corretto i componenti e creare il tuo mashup
+![Wiring](/doc/images/mashup_wiring.png)
