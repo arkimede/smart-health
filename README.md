@@ -245,8 +245,14 @@ Hai bisogno di un account su [fi-lab](https://account.lab.fiware.org/) e dei seg
 * historyHiveToLinearGraph
 * LienarGraph
 
+E' richiesta una minima conoscenza dei concetti e dell'interfaccia di Wireclod, a questo scopo puoi leggere questa [guida](https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/Application_Mashup_-_Wirecloud_-_User_and_Programmer_Guide#Sharing_your_mashups)
+
 Puoi trovare i .wgt che ti servono in questa [cartella](https://github.com/arkimede/smart-health/tree/master/livello_interfaccia_utente/wgt).
 La procedura per caricare i .wgt su fi-lab è spiegata in questo [video](https://www.youtube.com/watch?v=DSon3TSO9T8&feature=youtu.be)
 
-Usa l'immagine di sotto per collegare nel modo corretto i componenti e creare il tuo mashup
+Crea il workspace che ospiterà il tuo mashup, usa l'immagine di sotto per collegare nel modo corretto i componenti del tuo mashup
 ![Wiring](/doc/images/mashup_wiring.png)
+
+Al termine di queste operazioni dovresti avere l'interfaccia installata come nella foto di sotto.
+![Interface](/doc/images/mashup_vista_utente.png)
+
