@@ -228,26 +228,43 @@ Al termine di queste operazioni dovresti avere l'interfaccia installata come nel
 ###__Setting__
 Le impostazioni di configurazione dei widget sono parametrizzati a dei valori di default. Di seguito forniamo una breve spiegazione del loro significato.
 ####ServiceWidget
+
 ![service_widget](/doc/images/setting_service_widget.png)
+
 * NGSI Server
 * NGSI proxy
+* 
 ####QueryWidget
+
 ![query_widget](/doc/images/setting_query_widget.png)
+
 * NGSI Server
 * Service ID
+
 ####NGSIEntity2Poi
+
+![ngsi_entity](/doc/images/setting_ngsi_entity_2poi.png)
+
 * Coordinates attribute
 * Marker icon
-![ngsi_entity](/doc/images/setting_ngsi_entity_2poi.png)
+
 ####MapViewer
+
 * Mark show radius
 * Initial location
 * Zoom level
+
 ![map_viewer](/doc/images/setting_mapviewer.png)
+
 ####HistoryHiveToLinearGraph
+
 * HistoryMod Server URL
 * Number of days requested
+
 ![history_hive](/doc/images/setting_history_hive.png)
-####LinearGraph
+
+####LinearGraph 
+
 * Display graph leged
+
 ![linear_graph](/doc/images/setting_lineargraph.png)
