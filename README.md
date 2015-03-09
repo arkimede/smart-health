@@ -230,6 +230,6 @@ Al termine di queste operazioni dovresti avere l'interfaccia installata come nel
 ![service_widget](/doc/images/setting_service_widget.png)
 ![query_widget](/doc/images/setting_query_widget.png)
 ![ngsi_entity](/doc/images/setting_ngsi_entity_2poi.png)
-![map_viewer](/doc/images/setting_mapviewer)
+![map_viewer](/doc/images/setting_mapviewer.png)
 ![history_hive](/doc/images/setting_history_hive.png)
 ![linear_graph](/doc/images/setting_lineargraph.png)
