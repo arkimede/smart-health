@@ -233,7 +233,7 @@ Le impostazioni di configurazione dei widget sono parametrizzati a dei valori di
 
 * NGSI Server
 * NGSI proxy
-* 
+
 ####QueryWidget
 
 ![query_widget](/doc/images/setting_query_widget.png)
