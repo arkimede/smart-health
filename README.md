@@ -231,44 +231,44 @@ Le impostazioni di configurazione dei widget sono parametrizzati a dei valori di
 
 ![service_widget](/doc/images/setting_service_widget.png)
 
-* NGSI Server
-* NGSI proxy
+* NGSI Server: Indirizzo ip del server Orion
+* NGSI proxy: Indirizzo ip del proxy necessario per le sottoscrizioni https (non modificare)
 
 ####QueryWidget
 
 ![query_widget](/doc/images/setting_query_widget.png)
 
-* NGSI Server
-* Service ID
+* NGSI Server: Indirizzo ip del server Orion
+* Service ID: Id del servizio su cui effettuare la query
 
 ####NGSIEntity2Poi
 
 ![ngsi_entity](/doc/images/setting_ngsi_entity_2poi.png)
 
-* Coordinates attribute
-* Marker icon
+* Coordinates attribute: Attributo dell'entità observation che contiene le coordinate GPS
+* Marker icon: Non utilizzato (lasciare campo vuoto)
 
 ####MapViewer
 
 ![map_viewer](/doc/images/setting_mapviewer.png)
 
-* Mark show radius
-* Initial location
-* Zoom level
+* Mark show radius: Ampiezza raggio marcatore POI
+* Initial location: Località di default sulla mappa
+* Zoom level: Livello di zoom sulla mappa (min=1, max=22)
 
 
 ####HistoryHiveToLinearGraph
 
 ![history_hive](/doc/images/setting_history_hive.png)
 
-* HistoryMod Server URL
-* Number of days requested
+* HistoryMod Server URL: Indirizzo ip del REST server Hive
+* Number of days requested: Attualmente non utilizzato
 
 
 ####LinearGraph 
 
 ![linear_graph](/doc/images/setting_lineargraph.png)
 
-* Display graph leged
+* Display graph legend: Legenda on/off
 
 
