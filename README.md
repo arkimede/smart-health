@@ -250,21 +250,25 @@ Le impostazioni di configurazione dei widget sono parametrizzati a dei valori di
 
 ####MapViewer
 
+![map_viewer](/doc/images/setting_mapviewer.png)
+
 * Mark show radius
 * Initial location
 * Zoom level
 
-![map_viewer](/doc/images/setting_mapviewer.png)
 
 ####HistoryHiveToLinearGraph
+
+![history_hive](/doc/images/setting_history_hive.png)
 
 * HistoryMod Server URL
 * Number of days requested
 
-![history_hive](/doc/images/setting_history_hive.png)
 
 ####LinearGraph 
 
+![linear_graph](/doc/images/setting_lineargraph.png)
+
 * Display graph leged
 
-![linear_graph](/doc/images/setting_lineargraph.png)
+
