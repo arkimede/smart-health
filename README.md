@@ -225,3 +225,11 @@ Al termine di queste operazioni dovresti avere l'interfaccia installata come nel
 
 ![Interface](/doc/images/mashup_vista_utente.png)
 
+###__Setting__
+
+![service_widget](/doc/images/setting_service_widget.png)
+![query_widget](/doc/images/setting_query_widget.png)
+![ngsi_entity](setting_ngsi_entity_2poi.png)
+![map_viewer](setting_mapviewer)
+![history_hive](setting_history_hive.png)
+![linear_graph](setting_lineargraph.png)
