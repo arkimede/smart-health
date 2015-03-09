@@ -227,9 +227,15 @@ Al termine di queste operazioni dovresti avere l'interfaccia installata come nel
 
 ###__Setting__
 
+####ServiceWidget
 ![service_widget](/doc/images/setting_service_widget.png)
+####QueryWidget
 ![query_widget](/doc/images/setting_query_widget.png)
+####NGSIEntity2Poi
 ![ngsi_entity](/doc/images/setting_ngsi_entity_2poi.png)
+####MapViewer
 ![map_viewer](/doc/images/setting_mapviewer.png)
+####HistoryHiveToLinearGraph
 ![history_hive](/doc/images/setting_history_hive.png)
+####LinearGraph
 ![linear_graph](/doc/images/setting_lineargraph.png)
