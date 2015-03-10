@@ -107,7 +107,7 @@ riceva una notifica di update (nuove misurazioni) dal server Orion, invia il nuo
 ![Livello backend](/doc/images/livello_comunicazione_memorizzazione.png)
 ###Livello Interfaccia utente
 
-L’ultima componente del sistema è l’interfaccia con l’utente, attraverso di essa è possibile selezionare il servizio d'interesse e visualizzare sulla mappa le entità che prendono parte al servizio selezionato. Nel caso specifico, cioè l’applicazione per la misurazione del particolato, l’utente visualizzerà sulla mappa i taxi che dispongono dei sensori e le zone della città in cui sono disponibili delle misurazioni. Per la realizzazione dell’interfaccia grafica abbiamo utilizzato Wirecloud (vedi paragrafo [sec:Wirecloud]) e implementato due nuovi widget per i nostri scopi: 
+L’ultima componente del sistema è l’interfaccia con l’utente, attraverso di essa è possibile selezionare il servizio d'interesse e visualizzare sulla mappa le entità che prendono parte al servizio selezionato. Nel caso specifico, cioè l’applicazione per la misurazione del particolato, l’utente visualizzerà sulla mappa i taxi che dispongono dei sensori e le zone della città in cui sono disponibili delle misurazioni. Per la realizzazione dell’interfaccia grafica abbiamo utilizzato Wirecloud e implementato due nuovi widget per i nostri scopi: 
 
 * __ServiceWidget__: mostra all’utente i servizi attivi e permette di selezionarne uno.
 
@@ -213,7 +213,7 @@ Hai bisogno di un account su [fi-lab](https://account.lab.fiware.org/) e dei seg
 * historyHiveToLinearGraph
 * LienarGraph
 
-E' richiesta una minima conoscenza dei concetti e dell'interfaccia di Wireclod, a questo scopo puoi leggere questa [guida](https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/Application_Mashup_-_Wirecloud_-_User_and_Programmer_Guide#Sharing_your_mashups)
+E' richiesta una minima conoscenza dei concetti e dell'interfaccia di Wirecloud, a questo scopo puoi leggere questa [guida](https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/Application_Mashup_-_Wirecloud_-_User_and_Programmer_Guide#Sharing_your_mashups)
 
 Puoi trovare i .wgt che ti servono in questa [cartella](https://github.com/arkimede/smart-health/tree/master/livello_interfaccia_utente/wgt).
 La procedura per caricare i .wgt su fi-lab è spiegata in questo [video](https://www.youtube.com/watch?v=DSon3TSO9T8&feature=youtu.be)
@@ -225,8 +225,8 @@ Al termine di queste operazioni dovresti avere l'interfaccia installata come nel
 
 ![Interface](/doc/images/mashup_vista_utente.png)
 
-###__Setting__
-Le impostazioni di configurazione dei widget sono parametrizzati a dei valori di default. Di seguito forniamo una breve spiegazione del loro significato.
+###__Settings__
+Le impostazioni di configurazione dei widget sono parametrizzate a dei valori di default. Di seguito forniamo una breve spiegazione del loro significato.
 ####ServiceWidget
 
 ![service_widget](/doc/images/setting_service_widget.png)
