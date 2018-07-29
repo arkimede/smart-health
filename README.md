@@ -3,7 +3,7 @@ This is the repository for the health monitor system of Arkimede s.r.l . It uses
 
 Sorry, at this moment, only italian version :(
 
-##Il progetto
+## Il progetto
 
 * Il sistema è __economico__: è stato infatti realizzato con hardware a basso costo. Per effettuare le misurazioni sono stati scelti dei sistemi embedded facilmente reperibili sul mercato, dai costi molto contenuti che allo stesso tempo garantiscono buona capacità di elaborazione. Anche la scelta della sensoristica è stata rivolta a mantenere bassi i costi, i sensori di particolato sono purtroppo molto costosi. Il nostro approccio è stato quello di risparmiare sulla qualità dei sensori, pensando di migliorare la precisione della misurazione in un secondo momento attraverso una post elaborazione dei dati. Studi in letteratura hanno dimostrato come un elevato numero di sensori a basso costo, con opportune calibrazioni, possono garantire delle misurazioni paragonabili a quelle di un singolo sensore di alta qualità molto più costoso
 
@@ -67,7 +67,7 @@ Infine abbiamo l'entità __Observations__ che rappresenta la singola osservazion
 
 ![Struttura dati](/doc/images/struttura_dati_definitivo_cut.png)
 
-##Architettura
+## Architettura
 Il sistema è diviso in tre livelli:
 
 * Il livello di __sensoristica__: appartengono a questo livello i dispositivi embedded e i sensori utilizzati per la raccolta dei dati, le operazioni a questo livello consistono fondamentalmente nella raccolta e nell'inoltro delle informazioni al livello superiore che avrà il compito di elaborarle. 
@@ -78,7 +78,7 @@ Il sistema è diviso in tre livelli:
 
 ![Livelli del sistema](/doc/images/livelli_sistema_cut.jpeg)
 
-###Livello sensoristica
+### Livello sensoristica
 Il software che gestisce la componente di sensoristica è composto da tre script che girano direttamente sul dispositivo embedded (Linino o Raspberry): 
 
 * __Obd.py__: legge i valori di temperatura e pressione dal dispositivo obd e li scrive su un file.
@@ -89,7 +89,7 @@ Il software che gestisce la componente di sensoristica è composto da tre script
 
 ![Livello sensoristica](/doc/images/livello_sensoristica.png)
 
-###Livello backend
+### Livello backend
 
 Il secondo livello ha il compito di permettere la comunicazione tra l’applicazione produttrice dei dati (nel nostro caso il livello di sensoristica) e l’applicazione consumatrice (l’interfaccia grafica che si trova al terzo livello). I dati di temperatura, pressione e del particolato devono essere smistati dal primo al terzo livello e memorizzati per una futura consultazione o post elaborazione. Per svolgere questi compiti abbiamo utilizzato esclusivamente moduli sofware messi a disposizione dalla tecnologia Fi-ware, nello specifico:
 
@@ -152,7 +152,7 @@ Per la __logica di comunicazione e memorizzazione__:
 
 * Abbiamo dunque due modalità di accesso ai dati; la prima, descritta sopra, attraverso i widget di wirecloud, la seconda tramite i dataset pubblicati su CKAN.
 
-##How to start
+## How to start
 
 ###__Livello sensoristica__ 
 Utilizza il codice nella cartella [raspberry](https://github.com/arkimede/smart-health/tree/master/livello_sensoristica/raspberry) o [linino](https://github.com/arkimede/smart-health/tree/master/livello_sensoristica/linino) a seconda della tua piattorma. Nel caso di linino one, ricorda che come prima cosa dovrai caricare lo sketch __Shinyei.ino__ sul microcontrollore. 
@@ -168,7 +168,7 @@ Utilizza il codice nella cartella [raspberry](https://github.com/arkimede/smart-
 #nohup sudo python ./taxi_emulator.py >> taxi_emulator.out
 ```
 
-###__Livello backend__
+### __Livello backend__
 Hai bisogno di aver precedentemente installato questi componenti:
 * [redis](http://redis.io/download)
 * [rush](https://github.com/telefonicaid/Rush/wiki)
@@ -204,7 +204,7 @@ I link contengono le informazioni utili per eseguire con successo l'installazion
 #nohup  python restServerHive.py 1027 >> restServerHive.out
 ```
 
-###__Livello interfaccia utente__
+### __Livello interfaccia utente__
 Hai bisogno di un account su [fi-lab](https://account.lab.fiware.org/) e dei seguenti widget/operatori installati:
 * serviceWidget
 * queryWidget
